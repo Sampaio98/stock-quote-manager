@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
-import java.net.NetworkInterface;
 import java.net.SocketException;
 
 @Slf4j
@@ -16,7 +15,7 @@ import java.net.SocketException;
 public class RegisterConfig {
 
     @Value("${server.port}")
-    private String port;
+    private Integer port;
 
     @Autowired
     private RegisterNotificationFeign registerNotificationFeign;
@@ -30,7 +29,7 @@ public class RegisterConfig {
         try {
             registerNotificationFeign.registerNotification(notificationDTO);
         } catch (Exception e) {
-            log.info(e.getMessage());
+            log.info("Error occurred on registering a notification with message: {}", e.getMessage());
         }
     }
 }

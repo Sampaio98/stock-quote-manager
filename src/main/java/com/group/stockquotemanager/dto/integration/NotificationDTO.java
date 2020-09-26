@@ -11,9 +11,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class NotificationDTO {
 
-    private Long id;
-
     private String host;
-
-    private String port;
+    private Integer port;
 }

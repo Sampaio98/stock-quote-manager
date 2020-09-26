@@ -6,6 +6,7 @@ import com.group.stockquotemanager.model.Stock;
 import com.group.stockquotemanager.repository.StockQuoteRepository;
 import com.group.stockquotemanager.service.CacheStockService;
 import com.group.stockquotemanager.service.StockQuoteManagerService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -20,6 +21,7 @@ import java.util.stream.Collectors;
 
 import static org.springframework.http.HttpStatus.CREATED;
 
+@Slf4j
 @RestController
 public class StockQuoteManagerController {
 
@@ -57,6 +59,7 @@ public class StockQuoteManagerController {
 
     @DeleteMapping("/stockcache")
     public ResponseEntity<Void> cleanCache() {
+        log.info("Received request to clean the cache");
         cacheStockService.clean();
         return ResponseEntity.ok().build();
     }
