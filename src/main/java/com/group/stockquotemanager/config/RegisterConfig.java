@@ -26,10 +26,8 @@ public class RegisterConfig {
                 .port(port)
                 .host("localhost")
                 .build();
-        try {
-            registerNotificationFeign.registerNotification(notificationDTO);
-        } catch (Exception e) {
-            log.info("Error occurred on registering a notification with message: {}", e.getMessage());
-        }
+        log.info("Sending request to register api");
+        registerNotificationFeign.registerNotification(notificationDTO);
+
     }
 }
