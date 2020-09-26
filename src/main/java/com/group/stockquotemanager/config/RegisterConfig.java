@@ -2,6 +2,7 @@ package com.group.stockquotemanager.config;
 
 import com.group.stockquotemanager.dto.integration.NotificationDTO;
 import com.group.stockquotemanager.service.integration.RegisterNotificationFeign;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Component;
 import java.net.NetworkInterface;
 import java.net.SocketException;
 
+@Slf4j
 @Component
 public class RegisterConfig {
 
@@ -27,6 +29,10 @@ public class RegisterConfig {
                 .port(port)
                 .host(hostAddress)
                 .build();
-        registerNotificationFeign.registerNotification(notificationDTO);
+        try {
+            registerNotificationFeign.registerNotification(notificationDTO);
+        } catch (Exception e) {
+            log.info(e.getMessage());
+        }
     }
 }
