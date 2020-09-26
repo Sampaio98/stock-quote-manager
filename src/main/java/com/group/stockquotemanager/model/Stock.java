@@ -1,7 +1,7 @@
-package com.group.stockquotemanager.controller.model;
+package com.group.stockquotemanager.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.group.stockquotemanager.controller.dto.StockQuoteDTO;
+import com.group.stockquotemanager.dto.StockQuoteDTO;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

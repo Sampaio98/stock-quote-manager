@@ -1,10 +1,10 @@
-package com.group.stockquotemanager.controller.service;
+package com.group.stockquotemanager.service;
 
-import com.group.stockquotemanager.controller.dto.integration.StockDTO;
-import com.group.stockquotemanager.controller.exception.InvalidStockException;
-import com.group.stockquotemanager.controller.model.Stock;
-import com.group.stockquotemanager.controller.repository.StockQuoteRepository;
-import com.group.stockquotemanager.controller.service.integration.StockManagerFeign;
+import com.group.stockquotemanager.dto.integration.StockDTO;
+import com.group.stockquotemanager.exception.InvalidStockException;
+import com.group.stockquotemanager.model.Stock;
+import com.group.stockquotemanager.repository.StockQuoteRepository;
+import com.group.stockquotemanager.service.integration.StockManagerFeign;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

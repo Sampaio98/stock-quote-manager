@@ -1,8 +1,8 @@
-package com.group.stockquotemanager.controller.exception.handler;
+package com.group.stockquotemanager.exception.handler;
 
-import com.group.stockquotemanager.controller.dto.DefaultErrorDTO;
-import com.group.stockquotemanager.controller.exception.InvalidStockException;
-import com.group.stockquotemanager.controller.exception.StockNotFoundException;
+import com.group.stockquotemanager.dto.DefaultErrorDTO;
+import com.group.stockquotemanager.exception.InvalidStockException;
+import com.group.stockquotemanager.exception.StockNotFoundException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

@@ -1,6 +1,6 @@
-package com.group.stockquotemanager.controller.service.integration;
+package com.group.stockquotemanager.service.integration;
 
-import com.group.stockquotemanager.controller.dto.integration.StockDTO;
+import com.group.stockquotemanager.dto.integration.StockDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 

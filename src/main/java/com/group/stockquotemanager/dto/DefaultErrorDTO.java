@@ -1,4 +1,4 @@
-package com.group.stockquotemanager.controller.dto;
+package com.group.stockquotemanager.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

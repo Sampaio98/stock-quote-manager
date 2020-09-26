@@ -1,11 +1,11 @@
 package com.group.stockquotemanager.controller;
 
-import com.group.stockquotemanager.controller.dto.StockQuoteDTO;
-import com.group.stockquotemanager.controller.exception.StockNotFoundException;
-import com.group.stockquotemanager.controller.model.Stock;
-import com.group.stockquotemanager.controller.repository.StockQuoteRepository;
-import com.group.stockquotemanager.controller.service.CacheStockService;
-import com.group.stockquotemanager.controller.service.StockQuoteManagerService;
+import com.group.stockquotemanager.dto.StockQuoteDTO;
+import com.group.stockquotemanager.exception.StockNotFoundException;
+import com.group.stockquotemanager.model.Stock;
+import com.group.stockquotemanager.repository.StockQuoteRepository;
+import com.group.stockquotemanager.service.CacheStockService;
+import com.group.stockquotemanager.service.StockQuoteManagerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;

@@ -1,6 +1,6 @@
-package com.group.stockquotemanager.controller.cache;
+package com.group.stockquotemanager.cache;
 
-import com.group.stockquotemanager.controller.dto.integration.StockDTO;
+import com.group.stockquotemanager.dto.integration.StockDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

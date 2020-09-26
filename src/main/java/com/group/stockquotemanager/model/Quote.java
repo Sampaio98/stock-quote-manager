@@ -1,4 +1,4 @@
-package com.group.stockquotemanager.controller.model;
+package com.group.stockquotemanager.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

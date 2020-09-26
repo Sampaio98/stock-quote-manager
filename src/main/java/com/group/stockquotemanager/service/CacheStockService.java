@@ -1,7 +1,7 @@
-package com.group.stockquotemanager.controller.service;
+package com.group.stockquotemanager.service;
 
-import com.group.stockquotemanager.controller.cache.CacheStock;
-import com.group.stockquotemanager.controller.dto.integration.StockDTO;
+import com.group.stockquotemanager.cache.CacheStock;
+import com.group.stockquotemanager.dto.integration.StockDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

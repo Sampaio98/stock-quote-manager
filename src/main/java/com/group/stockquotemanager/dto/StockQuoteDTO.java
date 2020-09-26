@@ -1,6 +1,6 @@
-package com.group.stockquotemanager.controller.dto;
+package com.group.stockquotemanager.dto;
 
-import com.group.stockquotemanager.controller.model.Stock;
+import com.group.stockquotemanager.model.Stock;
 import lombok.Data;
 
 import java.util.LinkedHashMap;

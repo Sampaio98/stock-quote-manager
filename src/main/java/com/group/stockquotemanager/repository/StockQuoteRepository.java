@@ -1,6 +1,6 @@
-package com.group.stockquotemanager.controller.repository;
+package com.group.stockquotemanager.repository;
 
-import com.group.stockquotemanager.controller.model.Stock;
+import com.group.stockquotemanager.model.Stock;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

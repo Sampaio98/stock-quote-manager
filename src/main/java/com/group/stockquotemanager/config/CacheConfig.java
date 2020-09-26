@@ -1,6 +1,6 @@
-package com.group.stockquotemanager.controller.config;
+package com.group.stockquotemanager.config;
 
-import com.group.stockquotemanager.controller.cache.CacheStock;
+import com.group.stockquotemanager.cache.CacheStock;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

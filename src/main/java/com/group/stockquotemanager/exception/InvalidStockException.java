@@ -1,4 +1,4 @@
-package com.group.stockquotemanager.controller.exception;
+package com.group.stockquotemanager.exception;
 
 import static java.text.MessageFormat.format;
 

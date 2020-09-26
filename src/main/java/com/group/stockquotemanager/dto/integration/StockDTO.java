@@ -1,4 +1,4 @@
-package com.group.stockquotemanager.controller.dto.integration;
+package com.group.stockquotemanager.dto.integration;
 
 import lombok.Data;
 
