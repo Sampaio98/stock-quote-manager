@@ -23,11 +23,9 @@ public class RegisterConfig {
 
     @Bean
     public void populateData() throws SocketException {
-        String hostAddress = NetworkInterface.getNetworkInterfaces().nextElement().getInetAddresses().nextElement().getHostAddress();
-
         NotificationDTO notificationDTO = NotificationDTO.builder()
                 .port(port)
-                .host(hostAddress)
+                .host("localhost")
                 .build();
         try {
             registerNotificationFeign.registerNotification(notificationDTO);
