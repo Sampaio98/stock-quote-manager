@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 
-@FeignClient(url = "http://localhost:8080/stock", name = "StockManagerFeign")
+@FeignClient(url = "http://172.17.0.3:8080/stock", name = "StockManagerFeign")
 public interface StockManagerFeign {
 
     @GetMapping
