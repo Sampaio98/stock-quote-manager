@@ -11,10 +11,10 @@ import java.util.Map;
 @Data
 public class StockQuoteDTO {
 
-    @NotBlank(message = "The Stock Quote 'id' must not be empty!")
+    @NotBlank(message = "Field 'id' must not be empty!")
     private String id;
 
-    @NotEmpty(message = "The Stock Quote 'quotes' must not be empty!")
+    @NotEmpty(message = "Field 'quotes' must not be empty!")
     private Map<String, String> quotes;
 
     public StockQuoteDTO() {

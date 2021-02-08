@@ -27,7 +27,6 @@ public class RegisterConfig {
                 .host("localhost")
                 .build();
         log.info("Sending request to register api");
-        registerNotificationFeign.registerNotification(notificationDTO);
-
+//        registerNotificationFeign.registerNotification(notificationDTO);
     }
 }

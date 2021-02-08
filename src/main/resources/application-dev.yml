@@ -1,0 +1,12 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto=update: update
+  datasource:
+    url: jdbc:mysql://172.17.0.2:3306/bootdb?useTimezone=true&serverTimezone=UTC
+    username: root
+    password: root
+
+hibernate:
+  dialect: org.hibernate.dialect.MySQL8Dialect
+
